@@ -31,9 +31,22 @@ h1 {
     .doc a:hover {
       color: #666; }
 
-.welcome {
+.text-block{
+  margin: 40px 0;
+}
+
+.logo {
+//  background: #cfbaa7 url('/images/Logo-bg.png') no-repeat;
+  position: relative;
+}
+
+
+.logo-title {
+
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
+
+
 
 @-webkit-keyframes welcome {
   from {
@@ -52,4 +65,11 @@ h1 {
   to {
     -webkit-transform: scale(1);
   }
+}
+
+
+footer {
+ height: 284px;
+//  background-image: url(/images/footer.png);
+  text-align: center;
 }

@@ -2,22 +2,40 @@
 title: 'Лемезит Санкт-Петербург'
 ---
 
-div class="welcome"
-    h1 Лемезит СпБ
-    span Мы продаем лемезит!
 
-    = partial 'partials/menu'
+= partial 'partials/menu'
+= partial 'partials/logo'
 
+div.text-block.row id="fromus"
+    .col-xs-4.col-sm-offset-1.text-left
+        h2 О нас
+        span Компания лемезит спб занимается комплексными поставками и реализацией природного камня дикого камня, облицовочного камня, отделочного камня, а также камня для ландшафтных работ.
+    .col-xs-7
+        = image_tag('from_us/2.jpg')
 
-div id="services"
+div.text-block.text-center id="services"
     h2 Наши услуги
-    div Таблица с ценами, обьемами и сроками
+    ul
+        li  1. Широкий ассортимент природного камня: облицовочный камень,
 
-div id="photos"
-    h2 Фотогалерея
-    = image_tag('plitka-big.png')
-div id="contacts"
+        li 2. Ландшафтный камень
+
+        li 3. Бесплатную погрузку приобретенной продукции
+
+        li 4. Доставку приобретенной продукции
+
+        li 5. Прямые поставки с карьеров по ценам карьера-производителя
+
+        li 6. Организацию доставки в города России
+
+        li 7. Распил плитняка по размерам заказчика
+    = image_tag('services.jpg')
+
+div.text-block id="contacts"
     h2 Контакты
+
     div Наш номер в Петербурге: +7 812 945 61 23
     div Так же вы можете с нами связаться по адресу aaa@www.su
 
+footer
+    = image_tag('footer.png')
