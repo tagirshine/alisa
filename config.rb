@@ -53,7 +53,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 set :partials_dir, 'partials'
-
+# set :fonts_dir,  "fonts-folder"
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

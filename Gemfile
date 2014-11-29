@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 gem "middleman", "~>3.3.6"
 gem 'slim'
 gem 'coffee-script'
+gem 'jquery-rails'
 gem 'sass'
 gem 'bootstrap'
 
@@ -16,3 +17,4 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
+gem 'font-awesome-middleman', '~> 4.2.3'
