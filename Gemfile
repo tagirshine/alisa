@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 gem "middleman", "~>3.3.6"
 gem 'slim'
 gem 'coffee-script'
-gem 'jquery-rails'
+gem 'middleman-jquery'
 gem 'sass'
 gem 'bootstrap'
 

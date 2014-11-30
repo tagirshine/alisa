@@ -3,36 +3,52 @@ title: 'Лемезит Санкт-Петербург'
 ---
 
 = partial 'partials/logo'
-= partial 'partials/menu'
+= partial 'partials/ligthbox'
+/= partial 'partials/menu'
 
-div.text-block.row id="fromus"
+div.text-block.row id='fromus'
     .col-xs-4.col-sm-offset-1.text-left
-        h2 О нас
-        span Компания лемезит спб занимается комплексными поставками и реализацией природного камня дикого камня, облицовочного камня, отделочного камня, а также камня для ландшафтных работ.
+        /h2 О нас
+        span.bigtext
+            ' Через 10 дней привезем до 1000м2 плитки из натурального камня по минимальным ценам за счет работы
+            strong без посредников
+        div Мы поставляем лемезит напрямую с карьера, минуя посредников. И нашим отличием является то, что мы готовы реализовать вам нашу продукцию с рассрочкой до 30 дней
     .col-xs-7
-        = image_tag('from_us/2.jpg')
-
-div.text-block.text-center id="services"
+        /= image_tag('from_us/2.jpg', class: 'wasd')
+        table
+            tr
+                td rowspan='3'
+                    = image_tag('pictures/1.jpg', class: 'big js-open')
+                td
+                    = image_tag('pictures/2.jpg', class: 'small js-open')
+            tr
+                td
+                    = image_tag('pictures/3.jpg', class: 'small js-open')
+            tr
+                td
+                    = image_tag('pictures/4.jpg', class: 'small js-open')
+div.text-block.text-center.points
+    ul
+        li.fa.fa-truck
+            div.h3 Быстрая доставка
+        li.fa.fa-money
+            div.h3 Отсрочка платежа
+        li.fa.fa-cogs
+            div.h3 Без посредников
+/div.text-block.text-center id="services"
     h2 Наши услуги
     ul
         li  1. Широкий ассортимент природного камня: облицовочный камень,
-
         li 2. Ландшафтный камень
-
         li 3. Бесплатную погрузку приобретенной продукции
-
         li 4. Доставку приобретенной продукции
-
         li 5. Прямые поставки с карьеров по ценам карьера-производителя
-
         li 6. Организацию доставки в города России
-
         li 7. Распил плитняка по размерам заказчика
     = image_tag('services.jpg')
 
-div.text-block id="contacts"
+/div.text-block id="contacts"
     h2 Контакты
-
     div Наш номер в Петербурге: +7 812 945 61 23
     div Так же вы можете с нами связаться по адресу aaa@www.su
 

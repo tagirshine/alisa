@@ -1,12 +1,13 @@
 @charset "utf-8";
-
+//@import "font-awesome";
 body {
   background: #d4d4d4 url("../images/background.png");
   text-align: center;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  min-width: 850px;}
 
 h1 {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, .4);
   font-weight: bold;
   font-size: 32px;
   letter-spacing: -1px;
@@ -35,14 +36,36 @@ h1 {
   margin: 60px 0;
   width: 100%;
   padding: 0 10%;
+
+
+  .bigtext{
+    font-size: 120%;
+  }
+
   h2{
-    margin: 30px 0;
+    margin: 0 0 10px;
   }
   li {
     list-style-type: none;
   }
   & > img{
     margin: 30px 0;
+  }
+}
+
+img{
+  &.js-open{
+    cursor:pointer;
+  }
+  &.big{
+//    width: 350px;
+    height: 280px;
+    margin: 0px 5px;
+  }
+  &.small{
+    width: 120px;
+    height: 90px;
+    margin: 2px 0;
   }
 }
 
@@ -59,6 +82,36 @@ h1 {
     font-size: 16px;
   }
 }
+.number-phone{
+  position:absolute;
+  right:14%;
+  top:20px;
+  font-size:24px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  margin: 0 10px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.points{
+  ul{
+    li{
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      margin: 0 10px;
+      text-transform: uppercase;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+      &:before {
+        font-size: 70px;
+      }
+      div{
+        font-size:24px;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
 
 
 .logo-title {
@@ -69,6 +122,9 @@ h1 {
 
   -webkit-animation-name: welcome;
   -webkit-animation-duration: 1.5s; }
+.number-phone{
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: 2.1s; }
 
 
 @-webkit-keyframes welcome {
@@ -95,4 +151,16 @@ footer {
  height: 284px;
 //  background-image: url(/images/footer.png);
   text-align: center;
+}
+
+
+#ligthbox{
+  position: fixed;
+  display: none;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.4);
 }
