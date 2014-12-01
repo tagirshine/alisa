@@ -2,9 +2,19 @@
 //= require "jquery"
 
 $(document).ready(function() {
+
+//    console.log($('#lightbox').length);
+
     $('.js-open').on('click', function(){
-        document.getElementById('lightbox');
+        var picture = this.src;
+//        console.log($('#lightbox').find('img').attr('src'));
+        document.getElementById('lightboxImage').src = picture;
         $('#lightbox').show();
-//       console.log(gray.find('img'));
     });
+
+
+    $('#lightbox').on('click', function(){
+        $('#lightbox').hide();
+    });
+
 });
