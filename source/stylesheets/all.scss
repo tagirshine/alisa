@@ -154,7 +154,7 @@ footer {
 }
 
 
-#ligthbox{
+#lightbox{
   position: fixed;
   display: none;
   z-index: 2;
@@ -163,4 +163,8 @@ footer {
   left: 0;
   right: 0;
   background: rgba(0,0,0, 0.4);
+  cursor: pointer;
+  > img{
+    padding: 4%;
+  }
 }
